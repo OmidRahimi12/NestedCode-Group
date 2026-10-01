@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+@keyframes logoMove {
+
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+
+}
+
+.animate-logoMove {
+  animation: logoMove 20s linear infinite;
+}
