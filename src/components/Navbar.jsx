@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Button from "./Button";
-
 
 const links = [
   {
@@ -44,13 +43,19 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-7 md:flex">
           {links.map((link) => (
-            <Link
+            <NavLink
               key={link.name}
               to={link.url}
-              className="text-sm font-medium text-gray-700 transition-colors duration-300 hover:text-[#00a19e]"
+              className={({ isActive }) =>
+                `rounded-md px-3 py-2 text-sm font-medium transition-colors duration-300 ${
+                  isActive
+                    ? "bg-[#00a19e] text-white"
+                    : "text-gray-700 hover:text-[#00a19e]"
+                }`
+              }
             >
               {link.name}
-            </Link>
+            </NavLink>
           ))}
 
           <div className="group relative">
@@ -100,11 +105,11 @@ export default function Navbar() {
         </div>
 
         <div className="pt-3">
-           <Link to="/contact" >
-             <Button style="rounded">
-                <span className="flex items-center gap-2">Get Started</span>
+          <Link to="/contact">
+            <Button style="rounded">
+              <span className="flex items-center gap-2">Get Started</span>
             </Button>
-           </Link>
+          </Link>
         </div>
 
         <button
