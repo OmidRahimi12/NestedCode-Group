@@ -57,8 +57,6 @@ export default function Navbar() {
               {link.name}
             </NavLink>
           ))}
-
-        
         </div>
 
         <div className="pt-3">
