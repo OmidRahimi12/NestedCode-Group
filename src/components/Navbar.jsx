@@ -58,50 +58,7 @@ export default function Navbar() {
             </NavLink>
           ))}
 
-          <div className="group relative">
-            <button
-              type="button"
-              className="flex items-center gap-1 text-sm font-medium text-gray-700 transition-colors duration-300 hover:text-[#00a19e]"
-            >
-              Dropdown
-              <span className="inline-block text-base transition-transform duration-300 group-hover:rotate-90">
-                &gt;
-              </span>
-            </button>
-
-            <div
-              className="
-                invisible absolute left-0 top-full z-50 mt-3 w-48
-                translate-y-2 rounded-lg bg-white p-2
-                opacity-0 shadow-lg
-                transition-all duration-300
-                group-hover:visible
-                group-hover:translate-y-0
-                group-hover:opacity-100
-              "
-            >
-              <Link
-                to="/option1"
-                className="block rounded-md px-4 py-3 text-sm text-gray-700 transition-colors hover:bg-gray-100 hover:text-[#00a19e]"
-              >
-                Option 1
-              </Link>
-
-              <Link
-                to="/option2"
-                className="block rounded-md px-4 py-3 text-sm text-gray-700 transition-colors hover:bg-gray-100 hover:text-[#00a19e]"
-              >
-                Option 2
-              </Link>
-
-              <Link
-                to="/option3"
-                className="block rounded-md px-4 py-3 text-sm text-gray-700 transition-colors hover:bg-gray-100 hover:text-[#00a19e]"
-              >
-                Option 3
-              </Link>
-            </div>
-          </div>
+        
         </div>
 
         <div className="pt-3">
