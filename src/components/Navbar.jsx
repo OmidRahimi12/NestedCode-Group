@@ -125,14 +125,20 @@ export default function Navbar() {
         <div className="border-t border-gray-200 bg-white px-6 py-5 md:hidden">
           <div className="flex flex-col gap-4">
             {links.map((link) => (
-              <Link
+              <NavLink
                 key={link.name}
                 to={link.url}
                 onClick={() => setMobileOpen(false)}
-                className="text-sm font-medium text-gray-700 transition-colors hover:text-[#00a19e]"
+                className={({ isActive }) =>
+                  `rounded-md px-3 py-2 text-sm font-medium ${
+                    isActive
+                      ? "bg-[#00a19e] text-white"
+                      : "text-gray-700 hover:text-[#00a19e]"
+                  }`
+                }
               >
                 {link.name}
-              </Link>
+              </NavLink>
             ))}
 
             <div className="border-t border-gray-100 pt-4">
