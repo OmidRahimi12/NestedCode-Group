@@ -96,35 +96,7 @@ export default function Navbar() {
               </NavLink>
             ))}
 
-            <div className="border-t border-gray-100 pt-4">
-              <p className="mb-3 text-sm font-medium text-gray-700">Dropdown</p>
 
-              <div className="ml-4 flex flex-col gap-3">
-                <Link
-                  to="/option1"
-                  onClick={() => setMobileOpen(false)}
-                  className="text-sm text-gray-600 hover:text-[#00a19e]"
-                >
-                  Option 1
-                </Link>
-
-                <Link
-                  to="/option2"
-                  onClick={() => setMobileOpen(false)}
-                  className="text-sm text-gray-600 hover:text-[#00a19e]"
-                >
-                  Option 2
-                </Link>
-
-                <Link
-                  to="/option3"
-                  onClick={() => setMobileOpen(false)}
-                  className="text-sm text-gray-600 hover:text-[#00a19e]"
-                >
-                  Option 3
-                </Link>
-              </div>
-            </div>
 
             <div className="pt-3">
               <Button style="rounded">
