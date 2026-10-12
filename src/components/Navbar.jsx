@@ -33,7 +33,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="w-full border-b border-gray-200 bg-white">
+    <nav className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-5 md:px-6">
         <div>
           <Link to="/" className="text-2xl font-bold text-gray-900">
