@@ -113,6 +113,7 @@ export default function Home() {
       <video
         src={storyVideo}
         controls
+        muted
         autoPlay
         className="w-full rounded-xl shadow-2xl"
       >
