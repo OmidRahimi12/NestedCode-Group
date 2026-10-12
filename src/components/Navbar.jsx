@@ -34,7 +34,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full border-b border-gray-200 bg-white">
-  <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-5 md:px-6">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-5 md:px-6">
         <div>
           <Link to="/" className="text-2xl font-bold text-gray-900">
             NestedCode Group
@@ -60,14 +60,12 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:block">
-  <Link to="/contact">
-    <Button style="rounded">
-      <span className="flex items-center gap-2">
-        Get Started
-      </span>
-    </Button>
-  </Link>
-</div>
+          <Link to="/contact">
+            <Button style="rounded">
+              <span className="flex items-center gap-2">Get Started</span>
+            </Button>
+          </Link>
+        </div>
 
         <button
           type="button"
