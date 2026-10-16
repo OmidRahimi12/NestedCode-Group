@@ -37,31 +37,30 @@ const experiences = [
 export default function About() {
   return (
     <section className="w-full bg-linear-to-br from-white via-white to-[#eefafa] px-6 py-12 sm:px-8 lg:px-12 lg:py-20">
-      
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
-      
         <div>
           <button className="rounded bg-[#c8f8f7] px-3 py-1.5 text-sm font-bold text-[#03790c]">
             ABOUT OUR COMPANY
           </button>
 
           <h1 className="mt-4 text-3xl font-bold leading-tight text-gray-800 sm:text-4xl">
-            Tempor incididunt ut labore et dolore magna
+            We Build Modern Websites That Drive Growth
           </h1>
 
           <p className="mt-6 text-base leading-7 text-gray-600">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
-            magnam distinctio illo aperiam obcaecati exercitationem accusamus ut
-            quibusdam officiis!
+            Al-Fajr is a web development company focused on creating modern,
+            responsive, and user-friendly websites. We help businesses establish
+            a strong online presence through creative design, reliable
+            development, and digital solutions tailored to their goals.
           </p>
 
           <p className="mt-4 text-base leading-7 text-gray-400">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem quas maiores quam quisquam, porro modi labore in
-            beatae praesentium explicabo libero! Consectetur magnam!
+            From business websites and e-commerce platforms to custom web
+            applications, our goal is to turn ideas into effective digital
+            experiences that help businesses grow and connect with their
+            customers.
           </p>
 
-         
           <div className="mt-8 grid grid-cols-2 gap-4">
             {experiences.map((experience) => (
               <div
@@ -108,7 +107,6 @@ export default function About() {
         </div>
       </div>
 
-    
       <div className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-10 md:grid-cols-3">
         {logos.map((logo) => (
           <div
